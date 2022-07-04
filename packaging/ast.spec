@@ -38,10 +38,9 @@ make
 
 %install
 mkdir -p %{buildroot}%{install_prefix}/bin
-cp build/bin/test %{buildroot}%{install_prefix}/bin
+cp build/bin/ast_dump %{buildroot}%{install_prefix}/bin
 
 %files
 %manifest %{name}.manifest
 %defattr(-,root,root,-)
-%{install_prefix}/bin/test
-
+%{install_prefix}/bin/ast_dump

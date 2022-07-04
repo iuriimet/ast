@@ -1,1 +1,1 @@
-add_subdirectory(test)
+add_subdirectory(ast_dump)
