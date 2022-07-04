@@ -169,6 +169,9 @@ AST::AST(const string& project_pathname, vector<string> cli_args) :
         cli_args.emplace_back(string{"-I" + inc});
     }
 
+    for (auto arg : cli_args)
+        cout << "ZZZ ============= : " << arg << endl;
+
     vector<string> src_files = sources(m_project_pathname);
     for (const auto& f : src_files) {
         m_tu.emplace_back(ASTTU(f, cli_args));

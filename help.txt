@@ -1,0 +1,1 @@
+./test /home/iuriim/shared/AST/data/context/1/src "-xc++" "-std=c++11" "-O0" "-isysroot /home/iuriim/GBS-ROOT/local/BUILD-ROOTS/scratch.i586.0" > ast.txt
